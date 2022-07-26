@@ -9,6 +9,7 @@ export default function App() {
     // use the boolean to return a loading screen until loaded
 
     "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
+    "aldrich-regular": require("./assets/fonts/Aldrich-Regular.ttf")
 
     
 
@@ -29,7 +30,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#ffffff',
     alignItems: 'center',
     justifyContent: 'center',
   },

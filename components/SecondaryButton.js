@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Pressable, Alert } from "react-native";
 import Colors from "../assets/constants/colors";
 
 
-function PrimaryButton({ children, onPress }) {
+function SecondaryButton({ children, onPress }) {
   return (
     // inner and outer containers to control effects and handling. inner controls ripple with conditional styling.
     <View style={styles.buttonOuterContainer}>
@@ -14,7 +14,7 @@ function PrimaryButton({ children, onPress }) {
             : styles.buttonInnerContainer
         } // std prop "pressed" passed into react: if true then array of styles otherwise just inner container.
         // onPress prop to pass up to StartGameScreen to add handling
-        onPress={() => Alert.alert("YAAAY")}
+        onPress={() => Alert.alert("AAWWW")}
         
       >
         <Text style={styles.buttonText}>{children}</Text>
@@ -23,7 +23,7 @@ function PrimaryButton({ children, onPress }) {
   );
 }
 
-export default PrimaryButton;
+export default SecondaryButton;
 
 const styles = StyleSheet.create({
   buttonOuterContainer: {
