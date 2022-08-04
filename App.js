@@ -1,26 +1,29 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
-import { useFonts } from "expo-font";
+import { useFonts } from "@expo-google-fonts/inter";
 import StartDayScreen from "./screens/StartDayScreen";
+import DecisionScreen from "./screens/DecisionScreen";
 import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
-export default function App() {
+const Stack = createNativeStackNavigator();
+
+function App() {
   const [fontsLoaded] = useFonts({
     // use the boolean to return a loading screen until loaded
 
-    "open-sans": require("./assets/fonts/OpenSans-Regular.ttf"),
-    "aldrich-regular": require("./assets/fonts/Aldrich-Regular.ttf"),
+    AldrichRegular: require("./assets/fonts/Aldrich-Regular.ttf"),
   });
+
   return (
-    <NavigationContainer>
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
-        <View>
-          <StartDayScreen />
-        </View>
-      </View>
-    </NavigationContainer>
+    <>
+      <NavigationContainer>
+        <Stack.Navigator>
+          <Stack.Screen name="StartDayScreen" component={StartDayScreen} />
+          <Stack.Screen name="DecisionScreen" component={DecisionScreen} />
+        </Stack.Navigator>
+      </NavigationContainer>
+    </>
   );
 }
 
@@ -32,3 +35,5 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
+export default App;

@@ -1,7 +1,7 @@
 import { View, Image, Alert, ImageBackground, StyleSheet } from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
 
-function StartDayScreen() {
+function DecisionScreen() {
   return (
     <>
       <View>
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default StartDayScreen;
+export default DecisionScreen;

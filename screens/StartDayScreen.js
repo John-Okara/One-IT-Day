@@ -1,34 +1,20 @@
 import { View, Image, Alert, ImageBackground, StyleSheet } from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
-import { NavigationContainer } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 function StartDayScreen({ navigation }) {
   return (
-    <>
+    <ImageBackground source={require("../assets/img/Mainmenu.png")}>
+      <Image source={require("../assets/img/Kali.png")} />
       <View>
-        <ImageBackground
-          source={require("../assets/img/Mainmenu.png")}
-          resizeMode="cover"
-          style={styles.image}
-        >
-          <Image source={require("../assets/img/Kali.png")} />
-          <View>
-            <PrimaryButton
-              onPress={() => navigation.navigate("DecisionScreen")}
-            >
-              Start Game
-            </PrimaryButton>
-          </View>
-
-          <View>
-            <PrimaryButton onPress={() => Alert.alert("AAwww")}>
-              No
-            </PrimaryButton>
-          </View>
-        </ImageBackground>
+        <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
+          Start Game
+        </PrimaryButton>
       </View>
-    </>
+
+      <View>
+        <PrimaryButton onPress={() => Alert.alert("AWWWW")}>No</PrimaryButton>
+      </View>
+    </ImageBackground>
   );
 }
 
