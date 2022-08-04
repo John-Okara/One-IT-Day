@@ -3,16 +3,28 @@ import PrimaryButton from "../components/PrimaryButton";
 
 function StartDayScreen({ navigation }) {
   return (
-    <ImageBackground source={require("../assets/img/Mainmenu.png")}>
-      <Image source={require("../assets/img/Kali.png")} />
+    <ImageBackground
+      style={styles.backround}
+      source={require("../assets/img/Mainmenu.png")}
+    >
+      <View>
+        <Image style={styles.kali} source={require("../assets/img/Kali.png")} />
+      </View>
       <View>
         <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
-          Start Game
+          Game
+        </PrimaryButton>
+      </View>
+      <View>
+        <PrimaryButton onPress={() => navigation.navigate("AgendaScreen")}>
+          Agenda
         </PrimaryButton>
       </View>
 
       <View>
-        <PrimaryButton onPress={() => Alert.alert("AWWWW")}>No</PrimaryButton>
+        <PrimaryButton onPress={() => navigation.navigate("WorkshopScreen")}>
+          Workshops
+        </PrimaryButton>
       </View>
     </ImageBackground>
   );
@@ -22,9 +34,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  image: {
+  backround: {
     flex: 1,
     justifyContent: "center",
+    resizeMode: "cover",
+  },
+  kali: {
+    //flex: 9,
+    width: 80,
+    height: 80,
   },
 });
 

@@ -4,19 +4,25 @@ import PrimaryButton from "../components/PrimaryButton";
 function DecisionScreen() {
   return (
     <>
-      <View>
-        <View>
-          <PrimaryButton onPress={() => Alert.alert("yaaay")}>
-            Start Game
-          </PrimaryButton>
-        </View>
-
+      <ImageBackground
+        style={styles.backround}
+        source={require("../assets/img/Gamebackround.png")}
+      >
         <Image source={require("../assets/img/Kali.png")} />
-
         <View>
-          <PrimaryButton onPress={() => Alert.alert("AAwww")}>No</PrimaryButton>
+          <View>
+            <PrimaryButton onPress={() => Alert.alert("yaaay")}>
+              Start Game
+            </PrimaryButton>
+          </View>
+
+          <View>
+            <PrimaryButton onPress={() => Alert.alert("AAwww")}>
+              No
+            </PrimaryButton>
+          </View>
         </View>
-      </View>
+      </ImageBackground>
     </>
   );
 }
@@ -25,9 +31,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  image: {
+  backround: {
     flex: 1,
     justifyContent: "center",
+    resizeMode: "cover",
   },
 });
 
