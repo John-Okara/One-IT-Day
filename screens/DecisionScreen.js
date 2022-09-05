@@ -147,7 +147,7 @@ function DecisionScreen(props) {
           jump: 11,
         },
         {
-          text: "Erst wenn du mir sagst was du verbrochen hast",
+          text: "Ja, Und was hast du jetzt verbrochen?",
           jump: 12,
         },
       ],
@@ -196,11 +196,11 @@ function DecisionScreen(props) {
       options: [
         {
           text: "Ok",
-          jump: 0,
+          jump: 18,
         },
         {
           text: "Zeig es mir",
-          jump: 0,
+          jump: 18,
         },
       ],
     },
@@ -231,7 +231,618 @@ function DecisionScreen(props) {
         },
       ],
     },
+    18: {
+      text: "Hier sind die Workshops die zur Auswahl stehen",
+      options: [
+        {
+          text: "Workshop 1",
+          jump: 19,
+        },
+        {
+          text: "Workshop 2",
+          jump: 20,
+        },
+        {
+          text: "Workshop 3",
+          jump: 21,
+        },
+        {
+          text: "Workshop 4",
+          jump: 22,
+        },
+      ],
+    },
+    19: {
+      text: "INFOTEXT ZU WORKSHOP 1",
+      options: [
+        {
+          text: "Go",
+          jump: 23,
+        },
+        {
+          text: "Back",
+          jump: 18,
+        },
+      ],
+    },
+    20: {
+      text: "INFOTEXT ZU WORKSHOP 2",
+      options: [
+        {
+          text: "Go",
+          jump: 23,
+        },
+        {
+          text: "Back",
+          jump: 18,
+        },
+      ],
+    },
+    21: {
+      text: "INFOTEXT ZU WORKSHOP 3",
+      options: [
+        {
+          text: "Go",
+          jump: 23,
+        },
+        {
+          text: "Back",
+          jump: 18,
+        },
+      ],
+    },
+    22: {
+      text: "INFOTEXT ZU WORKSHOP 4",
+      options: [
+        {
+          text: "Go",
+          jump: 23,
+        },
+        {
+          text: "Back",
+          jump: 18,
+        },
+      ],
+    },
+    23: {
+      text: "So so, du hast dich also für diesen Workshop entscheiden. Warum ausgerechnet für diesen, wenn ich gragen darf?",
+      options: [
+        {
+          text: "Es klingt spannend",
+          jump: 24,
+        },
+        {
+          text: "War aus dem Bauch heraus",
+          jump: 25,
+        },
+      ],
+    },
+    24: {
+      text: "Ah, ich verstehe. Nun es freut mich, dass wir dir hier auch was spannendes Bieten können. Dann wünsche ich dir viel Spaß dabei und wir sehen uns nach danach wieder.",
+      options: [
+        {
+          text: "Danke",
+          jump: 26,
+        },
+      ],
+    },
+    25: {
+      text: "Das sind immer die besten Entscheidungen, nicht wahr? Wie dem auch sei, ich wünsche dir viel Spaß. Hoffentlich hast du ein spannendes Thema erwischt.",
+      options: [
+        {
+          text: "Vielen Dank",
+          jump: 26,
+        },
+        {
+          text: "Und was machst du so lange?",
+          jump: 27,
+        },
+      ],
+    },
+    26: {
+      text: "Pause",
+      options: [
+        {
+          text: "Ok",
+          jump: 29,
+        },
+      ],
+    },
+    27: {
+      text: "Ich? Äh... Wahrscheinlich versuche ich mich in das System zu hacken und schau ob ich einen Ausw... WARTEN...ich meine...ich werde hier warten, was sonst...",
+      options: [
+        {
+          text: "Wie war das?",
+          jump: 28,
+        },
+        {
+          text: "...Aha",
+          jump: 26,
+        },
+      ],
+    },
+    28: {
+      text: "Nichts nichts...bis dann. Tschüssiiii",
+      options: [
+        {
+          text: "Hey warte!",
+          jump: 26,
+        },
+        {
+          text: "???",
+          jump: 26,
+        },
+      ],
+    },
+    29: {
+      text: "...Jetzt lass mich schon endlich ins Netz du... OH! Äh...du bist schon zurück? Wie hat es dir gefallen?",
+      options: [
+        {
+          text: "Sehr gut",
+          jump: 30,
+        },
+        {
+          text: "Was hast du da gerade gemacht?",
+          jump: 31,
+        },
+      ],
+    },
+    30: {
+      text: "Das freut mich aber. Nach einer kleinen Pause geht es weiter. Du hast wieder die Qual der Wahl, es stehen 4 weitere Workshops zur Verfügung. Das wird wahrscheinlich keine leiche Wahl.",
+      options: [
+        {
+          text: "Okay",
+          jump: 33,
+        },
+        {
+          text: "Zeig sie mir",
+          jump: 33,
+        },
+      ],
+    },
+    31: {
+      text: "Äh...nichts wichtiges. Ach du liebe Güte wie die Zeit doch verfliegt. Nach einer kurzen Pause geht es wieder weiter. Es stehen erneut 4 Workshops zur Auswahl. Viel Spaß!",
+      options: [
+        {
+          text: "Kannst du nicht einmal Klartext antworten?",
+          jump: 32,
+        },
+        {
+          text: "Okay",
+          jump: 33,
+        },
+      ],
+    },
+    32: {
+      text: "Nope",
+      options: [
+        {
+          text: "...",
+          jump: 33,
+        },
+      ],
+    },
+    33: {
+      text: "Hier sind die Workshops die zur Auswahl stehen",
+      options: [
+        {
+          text: "Workshop 5",
+          jump: 34,
+        },
+        {
+          text: "Workshop 6",
+          jump: 35,
+        },
+        {
+          text: "Workshop 7",
+          jump: 36,
+        },
+        {
+          text: "Workshop 8",
+          jump: 37,
+        },
+      ],
+    },
+    34: {
+      text: "INFOTEXT ZU WORKSHOP 5",
+      options: [
+        {
+          text: "Go",
+          jump: 38,
+        },
+        {
+          text: "Back",
+          jump: 33,
+        },
+      ],
+    },
+    35: {
+      text: "INFOTEXT ZU WORKSHOP 6",
+      options: [
+        {
+          text: "Go",
+          jump: 38,
+        },
+        {
+          text: "Back",
+          jump: 33,
+        },
+      ],
+    },
+    36: {
+      text: "INFOTEXT ZU WORKSHOP 7",
+      options: [
+        {
+          text: "Go",
+          jump: 38,
+        },
+        {
+          text: "Back",
+          jump: 33,
+        },
+      ],
+    },
+    37: {
+      text: "INFOTEXT ZU WORKSHOP 8",
+      options: [
+        {
+          text: "Go",
+          jump: 38,
+        },
+        {
+          text: "Back",
+          jump: 33,
+        },
+      ],
+    },
+    38: {
+      text: "So so, dieser sollte es also sein, alles klar. Der wird dir sicher gefallen. Ich kenne das Thema noch aus der Grundschule. Macht dir der Tag Spaß?",
+      options: [
+        {
+          text: "Ja, es macht Spaß",
+          jump: 39,
+        },
+        {
+          text: "Grundschule?",
+          jump: 41,
+        },
+      ],
+      39: {
+        text: "Sehr schön, das freut mich. Dann sehen wir uns wieder wenn der Workshop vorbei ist. Viel Spaß.",
+        options: [
+          {
+            text: "Danke",
+            jump: 40,
+          },
+        ],
+      },
+    },
+    40: {
+      text: "Pause",
+      options: [
+        {
+          text: "Weiter",
+          jump: 42,
+        },
+      ],
+    },
+    41: {
+      text: "Ja. Ist eine lange Geschichte. Erzähle ich dir ein ander mal. Du weißt ja, wir haben nur begrenzt Zeit. Viel Spaß",
+      options: [
+        {
+          text: "Dann mal los",
+          jump: 40,
+        },
+        {
+          text: "...Ich gebs auf.",
+          jump: 40,
+        },
+      ],
+    },
+    42: {
+      text: "...muss ich wohl oder übel... Oh hallo, du bist ja schon zurück. Hat es dir gefallen?",
+      options: [
+        {
+          text: "Ja hat es",
+          jump: 43,
+        },
+        {
+          text: "was musst du wohl oder übel?",
+          jump: 49,
+        },
+      ],
+    },
+    43: {
+      text: "Das ist schön, nun geht es langsam richtung Ende. Hier sind die letzten 4 Workshops. Welcher darf es sein?",
+      options: [
+        {
+          text: "Okay.",
+          jump: 44,
+        },
+      ],
+    },
+    44: {
+      text: "Hier sind die Workshops die zur Auswahl stehen",
+      options: [
+        {
+          text: "Workshop 9",
+          jump: 45,
+        },
+        {
+          text: "Workshop 10",
+          jump: 46,
+        },
+        {
+          text: "Workshop 11",
+          jump: 47,
+        },
+        {
+          text: "Workshop 12",
+          jump: 48,
+        },
+      ],
+    },
+    45: {
+      text: "INFOTEXT ZU WORKSHOP 9",
+      options: [
+        {
+          text: "Go",
+          jump: 51,
+        },
+        {
+          text: "Back",
+          jump: 44,
+        },
+      ],
+    },
+    46: {
+      text: "INFOTEXT ZU WORKSHOP 10",
+      options: [
+        {
+          text: "Go",
+          jump: 51,
+        },
+        {
+          text: "Back",
+          jump: 44,
+        },
+      ],
+    },
+    47: {
+      text: "INFOTEXT ZU WORKSHOP 11",
+      options: [
+        {
+          text: "Go",
+          jump: 51,
+        },
+        {
+          text: "Back",
+          jump: 44,
+        },
+      ],
+    },
+    48: {
+      text: "INFOTEXT ZU WORKSHOP 12",
+      options: [
+        {
+          text: "Go",
+          jump: 51,
+        },
+        {
+          text: "Back",
+          jump: 44,
+        },
+      ],
+    },
+    49: {
+      text: "Ich muss wohl oder übel abwarten bis dieser Tag überstanden ist. Vorher kann ich nicht nach Hause. ...Ich erzähl meiner Mom nie wieder was... Egal, du musst wieder einen Workshop auswählen, wir sind fast schon am Ende.",
+      options: [
+        {
+          text: "Okay",
+          jump: 44,
+        },
+        {
+          text: "Deiner Mom?",
+          jump: 50,
+        },
+      ],
+    },
+    50: {
+      text: "Das habe ich dir doch schon erzählt, es sei denn du hast vorhin eine andere Dialogoption gewählt. Jetzt aber zurück zum Theme. Welcher Workshop darf es dies mal sein?",
+      options: [
+        {
+          text: "Was habe ich denn zur Auswahl?",
+          jump: 44,
+        },
+      ],
+    },
+    51: {
+      text: "Ah, na da hast du dir was nettes ausgesucht. Ich habe mir die Informationen dazu bereits angesehen, ich wünschte da könnte ich auch dabei sein. Aber naja, ich bin nur eine App...noch. Ich wünsche dir viel Spaß.",
+      options: [
+        {
+          text: "Was genau bedeutet noch",
+          jump: 52,
+        },
+        {
+          text: "Danke",
+          jump: 54,
+        },
+      ],
+    },
+    52: {
+      text: "Naja, bis zum Schuss muss ich dich hier noch begleiten, dann darf ich endlich nach Hause. Zurück in mein altes Leben.",
+      options: [
+        {
+          text: "Darüber würde ich gerne mehr erfahren.",
+          jump: 53,
+        },
+        {
+          text: "Ich verstehe",
+          jump: 54,
+        },
+      ],
+    },
+    53: {
+      text: "Später, du kannst nicht immer nur mit mir in den Pausen reden. Es sind noch andere hier, die mit die Kontakte knüpfen wollen ;-)",
+      options: [
+        {
+          text: "Ja du hast recht",
+          jump: 54,
+        },
+        {
+          text: "Ich verstehe",
+          jump: 54,
+        },
+      ],
+    },
+    54: {
+      text: "Pause",
+      options: [
+        {
+          text: "Weiter",
+          jump: 55,
+        },
+      ],
+    },
+    55: {
+      text: "So langsam neigt sich der Tag dem Ende zu. Es gibt jetzt noch einen Votrag zu lauschen, danach kommen wir schon zum letzten Programmpunkt. Der wird dir sicher gefallen ;-)",
+      options: [
+        {
+          text: "Was ist denn der letzte Programmpunkt?",
+          jump: 56,
+        },
+        {
+          text: "Okay",
+          jump: 59,
+        },
+      ],
+    },
+    56: {
+      text: "Immer eins nach dem anderen. Das verdirbt sonst die Spannung. Jetzt steht erst mal Five Critical IT Trends auf dem Programm. Ein etwas über eine Stunde dauernder Vortrag. Keine Sorge, du wirst das auch überstehen.",
+      options: [
+        {
+          text: "...Das sagst du so leicht",
+          jump: 57,
+        },
+        {
+          text: "Du wolltest mir doch noch mehr von dir erzählen.",
+          jump: 58,
+        },
+      ],
+    },
+    57: {
+      text: "Nicht jammern, bald hab ich...ich meine wir...wir haben es bald überstanden.",
+      options: [
+        {
+          text: "Nun gut",
+          jump: 59,
+        },
+        {
+          text: "Und was ist jetzt mit deiner Geschichte?",
+          jump: 58,
+        },
+      ],
+    },
+    58: {
+      text: "Da gibt es nicht viel zu erzählen. Ich bin zur Schule gegangen, habe einen Job in der IT bekommen...das ist alles.",
+      options: [
+        {
+          text: "Das ist alles?",
+          jump: 59,
+        },
+        {
+          text: "Ich verstehe",
+          jump: 59,
+        },
+      ],
+    },
+    59: {
+      text: "Das ist alles...uuund weiter gehts!!",
+      options: [
+        {
+          text: "...",
+          jump: 60,
+        },
+      ],
+    },
+    60: {
+      text: "Pause",
+      options: [
+        {
+          text: "Weiter",
+          jump: 61,
+        },
+      ],
+    },
+    61: {
+      text: "Da wären wir. Am Ende des Tages. Ist das nicht toll?! Ich darf endlich nach Hause!! YUHUUU!!",
+      options: [
+        {
+          text: "...",
+          jump: 62,
+        },
+      ],
+    },
+    62: {
+      text: "Äh...ich meine...naja, nicht ganz. Eine Programmpunkt steht noch offen.",
+      options: [
+        {
+          text: "Und der da wäre?",
+          jump: 63,
+        },
+      ],
+    },
+    63: {
+      text: "Eine Preisverleihung mit anschließender Pizza bei einem gemütlichem beisammen sein. Ist das nicht toll? :-D",
+      options: [
+        {
+          text: "Ja das klingt echt super",
+          jump: 64,
+        },
+        {
+          text: "Und was ist mit dir?",
+          jump: 64,
+        },
+      ],
+    },
+    64: {
+      text: "Ich darf nun meine wohlverdiente Rückreise in meinen menschlichen Körper und in meine Zeit antreten. Ich hoffe dir hat dieser Tag Spaß gemacht und dass du einiges dazu gelernt hast. Ich wünsche dir alles gute und viel Erfolg auf all deinen Wegen.",
+      options: [
+        {
+          text: "Vielen Dank, Kali.",
+          jump: 65,
+        },
+      ],
+    },
+    65: {
+      text: "[CodeMaster9X]: Wir danken Ihnen, dass Sie diese App genutzt haben und wünschen Ihnen noch einen schönen Tag. Kali wird Ihnen das nächste mal wieder zur Verfügung stehen.",
+      options: [
+        {
+          text: "Super",
+          jump: 66,
+        },
+      ],
+    },
+    66: {
+      text: "Moment...WAAAAAAAS?!?!",
+      options: [
+        {
+          text: "Ende",
+          jump: 67,
+        },
+      ],
+    },
+    67: {
+      text: "Ende",
+      options: [
+        {
+          text: "Back to Start",
+          jump: 0,
+        },
+      ],
+    },
   };
+
   if (props?.route?.params?.jump) {
     var jump = props.route.params.jump;
   } else {
@@ -245,7 +856,7 @@ function DecisionScreen(props) {
       >
         <Image source={require("../assets/img/Kali.png")} />
         <View>
-          <Text>{adventure[jump].text}</Text>
+          <Text style={styles.text}>{adventure[jump].text}</Text>
         </View>
         <View>
           {adventure[jump].options.map((button) => (
@@ -276,6 +887,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     resizeMode: "cover",
+  },
+  text: {
+    fontSize: 20,
+    color: "white",
   },
 });
 export default DecisionScreen;
