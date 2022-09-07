@@ -7,6 +7,7 @@ import AgendaScreen from "./screens/AgendaScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import WorkshopScreen from "./screens/WorkshopScreen";
+import { useCallback } from "react";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,6 +17,16 @@ function App() {
 
     AldrichRegular: require("./assets/fonts/Aldrich-Regular.ttf"),
   });
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
+  }
 
   return (
     <>
