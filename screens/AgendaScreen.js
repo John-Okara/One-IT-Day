@@ -37,16 +37,8 @@ function AgendaScreen(props) {
           jump: 6,
         },
         {
-          text: "13:35 - 13:45",
-          jump: 7,
-        },
-        {
           text: "13:45 - 15:00",
           jump: 8,
-        },
-        {
-          text: "15:00 - 15:15",
-          jump: 9,
         },
         {
           text: "15:20 - 16:30",
@@ -116,26 +108,8 @@ function AgendaScreen(props) {
         },
       ],
     },
-    7: {
-      text: "break",
-      options: [
-        {
-          text: "back",
-          jump: 0,
-        },
-      ],
-    },
     8: {
       text: "Level 3 - Hands on",
-      options: [
-        {
-          text: "back",
-          jump: 0,
-        },
-      ],
-    },
-    9: {
-      text: "break",
       options: [
         {
           text: "back",
@@ -184,7 +158,7 @@ function AgendaScreen(props) {
       >
         <Image source={require("../assets/img/Kali.png")} />
         <View>
-          <Text>{agenda[jump].text}</Text>
+          <Text style={styles.text}>{agenda[jump].text}</Text>
         </View>
         <View>
           {agenda[jump].options.map((button) => (
@@ -215,6 +189,13 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     resizeMode: "cover",
+  },
+  text: {
+    fontSize: 20,
+    color: "white",
+    marginBottom: 10,
+    marginLeft: 20,
+    marginRight: 20,
   },
 });
 export default AgendaScreen;

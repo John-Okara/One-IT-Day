@@ -232,28 +232,28 @@ function DecisionScreen(props) {
       ],
     },
     18: {
-      text: "Hier sind die Workshops die zur Auswahl stehen",
+      text: "Was du hier nun siehst, sind die verschiedenen Themengebiete und die Räume in denen es stattfinden wird. Deteilierte Informationen findest du, wenn du auf den dementsprechenden Button drückst.",
       options: [
         {
-          text: "Workshop 1",
+          text: "Business Core - Auditorium",
           jump: 19,
         },
         {
-          text: "Workshop 2",
+          text: "Integration - Feldberg",
           jump: 20,
         },
         {
-          text: "Workshop 3",
+          text: "Digitalization - Flexible Conference Room",
           jump: 21,
         },
         {
-          text: "Workshop 4",
+          text: "Enterprise IT - Workshop Room 5.1.1-5.1.2",
           jump: 22,
         },
       ],
     },
     19: {
-      text: "INFOTEXT ZU WORKSHOP 1",
+      text: "Who are Business Core, what are the roles,  and what work is the tea,m currently doing? Nikolas Popp leads off with an impulse talk and then you can ask them anything about their work and what Business Core does for Haufe Group.",
       options: [
         {
           text: "Go",
@@ -266,7 +266,7 @@ function DecisionScreen(props) {
       ],
     },
     20: {
-      text: "INFOTEXT ZU WORKSHOP 2",
+      text: "Declarative infrastructure for the lazy OPS. Automation is the key to operating large IT systems. At the heart of the declarative approach is a description, on the basis of which we roll out our DevOps services reliably and reproducibly. In a 30-minute session, we will show some examples of this from our daily work.",
       options: [
         {
           text: "Go",
@@ -279,7 +279,7 @@ function DecisionScreen(props) {
       ],
     },
     21: {
-      text: "INFOTEXT ZU WORKSHOP 3",
+      text: "Digitalization - Sales & Service Team - Hands - on SFDC will present  usecases: \n1. How key user work with SFDC \n2. How easy it is to integrate external objects in SFDC \n3. How easy it is to make configuration 4. Tosca and SFDC",
       options: [
         {
           text: "Go",
@@ -292,7 +292,7 @@ function DecisionScreen(props) {
       ],
     },
     22: {
-      text: "INFOTEXT ZU WORKSHOP 4",
+      text: "Enterprise IT unpack topics that all ITler should know about using IT equipment and services. They also answer any questions you might have about Enterprise IT. Come to this open space if  you want to find out how to better use virtual meeting room tech, what you have to do ensure security, and anything else you might want to know about enterprise IT. Please note, you will have a chance to ask questions before One.IT day.",
       options: [
         {
           text: "Go",
@@ -423,28 +423,28 @@ function DecisionScreen(props) {
       ],
     },
     33: {
-      text: "Hier sind die Workshops die zur Auswahl stehen",
+      text: "Wie auch zuvor, hier sind die Themengebiete und die Räume.",
       options: [
         {
-          text: "Workshop 5",
+          text: "Business Core - Auditorium",
           jump: 34,
         },
         {
-          text: "Workshop 6",
+          text: "Integration - Feldberg",
           jump: 35,
         },
         {
-          text: "Workshop 7",
+          text: "Digitalization - Flexible Conference Room",
           jump: 36,
         },
         {
-          text: "Workshop 8",
+          text: "Enterprise IT - Workshop Room 5.1.1-5.1.2",
           jump: 37,
         },
       ],
     },
     34: {
-      text: "INFOTEXT ZU WORKSHOP 5",
+      text: "The NextGen ERP Intiative: The Business Core Area discusses the sheer size of the ERP initiative and how they will move the intiative forward in 2023 - collaboration with other IT teams, milestones, value deliveries -  to support the Haufe Group business strategy and to lay the groundwork for going live in 2024.",
       options: [
         {
           text: "Go",
@@ -457,7 +457,7 @@ function DecisionScreen(props) {
       ],
     },
     35: {
-      text: "INFOTEXT ZU WORKSHOP 6",
+      text: "Integration area present the following initiatives DevOps Services Software Bill Of Materials - How to keep track of your Services in Operations Integration Dataflow - Revamp Integration Product Data Management with NGE 3 Stände und Managementraum?",
       options: [
         {
           text: "Go",
@@ -470,7 +470,7 @@ function DecisionScreen(props) {
       ],
     },
     36: {
-      text: "INFOTEXT ZU WORKSHOP 7",
+      text: "Digitalization area present the - Digital champions: vendor management, Wowinex Idea Portal, HLRE Customer Centricity, Citizen Developer, Akademie Seminar environment initiatives - and how these initiatives support IT and Haufe Group business objectives. Some insights about our colleauges from Sales & Service team regarding their challenges with the NGE program and how this also supports our business objectives.",
       options: [
         {
           text: "Go",
@@ -483,7 +483,7 @@ function DecisionScreen(props) {
       ],
     },
     37: {
-      text: "INFOTEXT ZU WORKSHOP 8",
+      text: "Enterprise IT - Workplace in the metaverse. Workplace showcases its work, including real example of a metaverse meeting. Come to this Team Work Fair to learn about Team Workplace and to experience the metaverse.",
       options: [
         {
           text: "Go",
@@ -507,16 +507,17 @@ function DecisionScreen(props) {
           jump: 41,
         },
       ],
-      39: {
-        text: "Sehr schön, das freut mich. Dann sehen wir uns wieder wenn der Workshop vorbei ist. Viel Spaß.",
-        options: [
-          {
-            text: "Danke",
-            jump: 40,
-          },
-        ],
-      },
     },
+    39: {
+      text: "Sehr schön, das freut mich. Dann sehen wir uns wieder wenn der Workshop vorbei ist. Viel Spaß.",
+      options: [
+        {
+          text: "Danke",
+          jump: 40,
+        },
+      ],
+    },
+
     40: {
       text: "Pause",
       options: [
@@ -565,25 +566,25 @@ function DecisionScreen(props) {
       text: "Hier sind die Workshops die zur Auswahl stehen",
       options: [
         {
-          text: "Workshop 9",
+          text: "Business Core - Auditorium",
           jump: 45,
         },
         {
-          text: "Workshop 10",
+          text: "Integration - Feldberg",
           jump: 46,
         },
         {
-          text: "Workshop 11",
+          text: "Digitalization - Flexible Conference Room",
           jump: 47,
         },
         {
-          text: "Workshop 12",
+          text: "Enterprise IT - Workshop Room 5.1.1-5.1.2",
           jump: 48,
         },
       ],
     },
     45: {
-      text: "INFOTEXT ZU WORKSHOP 9",
+      text: "Agile working is a part of IT! Here, we lead  you through a series of agile games that simulate some the challenges faced by the Next Gen ERP initiative and that act as a catalyst to build communication, data collection and priortization skills to find and right-size solutions. No Hybrid concept",
       options: [
         {
           text: "Go",
@@ -596,7 +597,7 @@ function DecisionScreen(props) {
       ],
     },
     46: {
-      text: "INFOTEXT ZU WORKSHOP 10",
+      text: "Holger Neub's integration team shows us the difference between good and bad system integration by making you feel Bad Integration. You will be part of the game. Hybrid concept: Presence doing, remote watching",
       options: [
         {
           text: "Go",
@@ -609,7 +610,7 @@ function DecisionScreen(props) {
       ],
     },
     47: {
-      text: "INFOTEXT ZU WORKSHOP 11",
+      text: "Get your feet wet with Power Platform technology: Alex and the Power Platform team step us through a power platform workfow to build a data analytics platform complete with dashboard. Full Hybrid",
       options: [
         {
           text: "Go",
@@ -622,7 +623,7 @@ function DecisionScreen(props) {
       ],
     },
     48: {
-      text: "INFOTEXT ZU WORKSHOP 12",
+      text: "Intro to Cloud: Hands on Serverless WS: Crisitian Pirtea and Max Schellhorn: Cristian and Max give a short impulse talk on how AWS can be used for IT, the business and technology advantages, and steps participants through a hands on serverless workshop, proving that everybody can do cloud computing. Join this hands on, if you want to know why you need cloud for your IT and to get started using cloud AWS services. Full Hybrid",
       options: [
         {
           text: "Go",
@@ -854,13 +855,18 @@ function DecisionScreen(props) {
         style={styles.backround}
         source={require("../assets/img/Gamebackround.png")}
       >
-        <Image source={require("../assets/img/Kali.png")} />
+        <View style={styles.kaliposition}>
+          <Image
+            style={styles.kalisize}
+            source={require("../assets/img/Kali.png")}
+          />
+        </View>
         <View>
           <Text style={styles.text}>{adventure[jump].text}</Text>
         </View>
-        <View>
+        <View style={styles.buttons}>
           {adventure[jump].options.map((button) => (
-            <View>
+            <View style={styles.button}>
               <PrimaryButton
                 key={button.text}
                 onPress={() =>
@@ -885,12 +891,23 @@ const styles = StyleSheet.create({
   },
   backround: {
     flex: 1,
-    justifyContent: "center",
+    justifyContent: "flex-start",
     resizeMode: "cover",
   },
   text: {
     fontSize: 20,
     color: "white",
+    marginBottom: 100,
+    marginLeft: 20,
+    marginRight: 20,
+  },
+  kaliposition: {
+    marginBottom: 30,
+    marginLeft: 300,
+  },
+  kalisize: {
+    width: 80,
+    height: 80,
   },
 });
 export default DecisionScreen;
