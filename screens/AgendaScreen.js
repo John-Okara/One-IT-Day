@@ -310,20 +310,32 @@ function AgendaScreen(props) {
       ],
     },
     21: {
-      //Closed Overview
-      text: "[Insert Title]",
+      //InfoTech Overview
+      text: "[Insert Infotext InfoTech]",
       options: [
         {
-          text: "15:20 - Closed InfoTech",
-          jump: 21,
+          text: "Back",
+          jump: 20,
         },
+      ],
+    },
+    22: {
+      //Quiz Prizes Overview
+      text: "[Insert Infotext Quizprizes]",
+      options: [
         {
-          text: "16:30 - Quiz Prizes",
-          jump: 22,
+          text: "Back",
+          jump: 20,
         },
+      ],
+    },
+    22: {
+      //Pizza and Relax Overview
+      text: "[Insert Infotext Pizza and Relax]",
+      options: [
         {
-          text: "17:00 - Pizza and Relax",
-          jump: 23,
+          text: "Back",
+          jump: 20,
         },
       ],
     },
