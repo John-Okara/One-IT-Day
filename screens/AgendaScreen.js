@@ -329,7 +329,7 @@ function AgendaScreen(props) {
         },
       ],
     },
-    22: {
+    23: {
       //Pizza and Relax Overview
       text: "[Insert Infotext Pizza and Relax]",
       options: [
