@@ -8,6 +8,11 @@ import {
 } from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
 import StyledText from "react-native-styled-text";
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs([
+  "Non-serializable values were found in the navigation state",
+]);
 
 function DecisionScreen(props) {
   const adventure = {
@@ -222,7 +227,7 @@ function DecisionScreen(props) {
       ],
     },
     15: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Ok",
@@ -231,7 +236,7 @@ function DecisionScreen(props) {
       ],
     },
     16: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Ok",
@@ -240,7 +245,7 @@ function DecisionScreen(props) {
       ],
     },
     17: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Ok",
@@ -365,7 +370,7 @@ function DecisionScreen(props) {
       ],
     },
     26: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Ok",
@@ -555,7 +560,7 @@ function DecisionScreen(props) {
     },
 
     40: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Weiter",
@@ -746,7 +751,7 @@ function DecisionScreen(props) {
       ],
     },
     54: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Weiter",
@@ -819,7 +824,7 @@ function DecisionScreen(props) {
       ],
     },
     60: {
-      text: "Pause",
+      text: "Wir machen nun eine kleine Pause",
       options: [
         {
           text: "Weiter",
@@ -942,6 +947,7 @@ function DecisionScreen(props) {
     </>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
