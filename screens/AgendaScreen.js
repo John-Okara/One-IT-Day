@@ -91,7 +91,7 @@ function AgendaScreen(props) {
     },
     5: {
       //Level 1 Overview
-      text: "<b>Level 1 - Team Work 2x 30 min</b> \n\n10:50",
+      text: "<b>Level 1 - Team Work - 10:50 </b>\n\nChoose two (2), 30-minute Team Work sessions to get to know the IT teams, how they work and the solutions they offer. ",
       options: [
         {
           text: "Auditorium",
@@ -157,7 +157,7 @@ function AgendaScreen(props) {
     },
     10: {
       //Level 2 Overview
-      text: "<b>Level 2 - Area Initiatives</b> \n\n12:55",
+      text: "<b>Level 2 - Area Initiatives - 12:55</b> \n\nChoose one (1) Area Initiative and find out what the IT Areas are planning for 2023 and how these plans will affect work at HG.",
       options: [
         {
           text: "Auditorium",
@@ -223,7 +223,7 @@ function AgendaScreen(props) {
     },
     15: {
       //Level 3 Overview
-      text: "<b>Level 3 - Hands On</b> \n\n13:45",
+      text: '<b>Level 3 - Hands On - 13:45</b> \n\nJoin one (1) "Hands On" to wake up and learn something new by doing. You get to choose from four cool hands on exercises that anybody can accomplish.',
       options: [
         {
           text: "Auditorium",
@@ -292,7 +292,7 @@ function AgendaScreen(props) {
       text: "Kommen wir nun langsam zum Abschluss, hier findest du alle wichtigen Informarionen.",
       options: [
         {
-          text: "15:20 - Closed InfoTech",
+          text: "15:20 - Keynote InfoTech",
           jump: 21,
         },
         {
