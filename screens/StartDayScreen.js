@@ -20,12 +20,6 @@ function StartDayScreen({ navigation }) {
           Agenda
         </PrimaryButton>
       </View>
-
-      <View>
-        <PrimaryButton onPress={() => navigation.navigate("WorkshopScreen")}>
-          Workshops
-        </PrimaryButton>
-      </View>
     </ImageBackground>
   );
 }

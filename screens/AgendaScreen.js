@@ -32,14 +32,14 @@ function AgendaScreen(props) {
           jump: 15,
         },
         {
-          text: "Closed",
+          text: "Closing",
           jump: 20,
         },
       ],
     },
     1: {
       //Kick Off Overview
-      text: "[insert Titel]",
+      text: "Komm rein, hol Dir ein paar Snacks und mach dich gemutlich. \n\nHier lernen wir wie One.IT Day funktioniert, und Andreas - unser CIO - gibt uns der erste Impuls. ",
       options: [
         {
           text: "09:30 - Meet & Greet",
@@ -289,7 +289,7 @@ function AgendaScreen(props) {
     },
     20: {
       //Closed Overview
-      text: "[Insert Title]",
+      text: "Kommen wir nun langsam zum Abschluss, hier findest du alle wichtigen Informarionen.",
       options: [
         {
           text: "15:20 - Closed InfoTech",
@@ -311,7 +311,7 @@ function AgendaScreen(props) {
     },
     21: {
       //InfoTech Overview
-      text: "[Insert Infotext InfoTech]",
+      text: "Brian Jackson von InfoTech liefert die Top-5 IT-Trends, die jede IT Abteilung auf dem Hut haben muss. ",
       options: [
         {
           text: "Back",
@@ -321,7 +321,7 @@ function AgendaScreen(props) {
     },
     22: {
       //Quiz Prizes Overview
-      text: "[Insert Infotext Quizprizes]",
+      text: "Zeigen uns, das was am Tag kleben geblieben ist. \n\nWenn du gut bist kannst Du etwas gewinnen.",
       options: [
         {
           text: "Back",
@@ -331,7 +331,7 @@ function AgendaScreen(props) {
     },
     23: {
       //Pizza and Relax Overview
-      text: "[Insert Infotext Pizza and Relax]",
+      text: "Now, forget about it. \n\nZeit für Pizza futtern und zusammen entspannen. ",
       options: [
         {
           text: "Back",

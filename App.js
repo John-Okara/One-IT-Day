@@ -6,7 +6,6 @@ import DecisionScreen from "./screens/DecisionScreen";
 import AgendaScreen from "./screens/AgendaScreen";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import WorkshopScreen from "./screens/WorkshopScreen";
 import { useCallback } from "react";
 
 const Stack = createNativeStackNavigator();
@@ -32,10 +31,21 @@ function App() {
     <>
       <NavigationContainer>
         <Stack.Navigator>
-          <Stack.Screen name="StartDayScreen" component={StartDayScreen} />
-          <Stack.Screen name="DecisionScreen" component={DecisionScreen} />
-          <Stack.Screen name="AgendaScreen" component={AgendaScreen} />
-          <Stack.Screen name="WorkshopScreen" component={WorkshopScreen} />
+          <Stack.Screen
+            name="StartDayScreen"
+            component={StartDayScreen}
+            options={{ title: "Home" }}
+          />
+          <Stack.Screen
+            name="DecisionScreen"
+            component={DecisionScreen}
+            options={{ title: "Game" }}
+          />
+          <Stack.Screen
+            name="AgendaScreen"
+            component={AgendaScreen}
+            options={{ title: "Agenda" }}
+          />
         </Stack.Navigator>
       </NavigationContainer>
     </>
