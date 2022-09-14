@@ -7,18 +7,20 @@ function StartDayScreen({ navigation }) {
       style={styles.backround}
       source={require("../assets/img/Mainmenu.png")}
     >
-      <View>
+      <View style={styles.kaliposition}>
         <Image style={styles.kali} source={require("../assets/img/Kali.png")} />
       </View>
-      <View>
-        <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
-          Game
-        </PrimaryButton>
-      </View>
-      <View>
-        <PrimaryButton onPress={() => navigation.navigate("AgendaScreen")}>
-          Agenda
-        </PrimaryButton>
+      <View style={styles.buttons}>
+        <View style={styles.button}>
+          <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
+            Game
+          </PrimaryButton>
+        </View>
+        <View style={styles.button}>
+          <PrimaryButton onPress={() => navigation.navigate("AgendaScreen")}>
+            Agenda
+          </PrimaryButton>
+        </View>
       </View>
     </ImageBackground>
   );
@@ -37,6 +39,18 @@ const styles = StyleSheet.create({
     //flex: 9,
     width: 80,
     height: 80,
+  },
+  kaliposition: {
+    marginBottom: 30,
+    marginLeft: 30,
+  },
+  button: {
+    width: 350,
+  },
+  buttons: {
+    top: 350,
+    position: "absolute",
+    alignSelf: "center",
   },
 });
 
