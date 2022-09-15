@@ -928,7 +928,7 @@ function DecisionScreen(props) {
         </View>
         <View style={styles.buttons}>
           {adventure[jump].options.map((button) => (
-            <View style={styles.button}>
+            <View style={styles.button} key={button.text}>
               <PrimaryButton
                 key={button.text}
                 onPress={() =>

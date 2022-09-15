@@ -363,7 +363,7 @@ function AgendaScreen(props) {
         </View>
         <View style={styles.buttons}>
           {agenda[jump].options.map((button) => (
-            <View style={styles.button}>
+            <View style={styles.button} key={button.text}>
               <PrimaryButton
                 key={button.text}
                 onPress={() =>
