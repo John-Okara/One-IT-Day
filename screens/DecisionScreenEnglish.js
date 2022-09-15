@@ -227,7 +227,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     15: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>09:50 AM</b>",
       options: [
         {
           text: "Ok",
@@ -236,7 +236,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     16: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>09:55 AM</b>",
       options: [
         {
           text: "Ok",
@@ -245,7 +245,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     17: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>10:50 AM</b>",
       options: [
         {
           text: "Ok",
@@ -370,7 +370,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     26: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>12:55 AM</b>",
       options: [
         {
           text: "Ok",
@@ -560,7 +560,7 @@ function DecisionScreenEnglish(props) {
     },
 
     40: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>01:45 PM</b>",
       options: [
         {
           text: "Go",
@@ -751,7 +751,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     54: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>03:20 PM</b>",
       options: [
         {
           text: "Go",
@@ -824,7 +824,7 @@ function DecisionScreenEnglish(props) {
       ],
     },
     60: {
-      text: "Now we make a little break",
+      text: "Now we take a little break \n\nCome back at <b>04:30 PM</b>",
       options: [
         {
           text: "Go",

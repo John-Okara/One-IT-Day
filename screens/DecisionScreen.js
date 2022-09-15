@@ -227,7 +227,7 @@ function DecisionScreen(props) {
       ],
     },
     15: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>09:50</b>",
       options: [
         {
           text: "Ok",
@@ -236,7 +236,7 @@ function DecisionScreen(props) {
       ],
     },
     16: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>09:55</b>",
       options: [
         {
           text: "Ok",
@@ -245,7 +245,7 @@ function DecisionScreen(props) {
       ],
     },
     17: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>10:50</b>",
       options: [
         {
           text: "Ok",
@@ -370,7 +370,7 @@ function DecisionScreen(props) {
       ],
     },
     26: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine Mittagspause\n\nEs geht weiter um <b>12:55</b>",
       options: [
         {
           text: "Ok",
@@ -560,7 +560,7 @@ function DecisionScreen(props) {
     },
 
     40: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>13:45</b>",
       options: [
         {
           text: "Weiter",
@@ -751,7 +751,7 @@ function DecisionScreen(props) {
       ],
     },
     54: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>15:20</b>",
       options: [
         {
           text: "Weiter",
@@ -824,7 +824,7 @@ function DecisionScreen(props) {
       ],
     },
     60: {
-      text: "Wir machen nun eine kleine Pause",
+      text: "Wir machen nun eine kleine Pause \n\nEs geht weiter um <b>16:30</b>",
       options: [
         {
           text: "Weiter",
