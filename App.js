@@ -4,6 +4,7 @@ import { useFonts } from "@expo-google-fonts/inter";
 import StartDayScreen from "./screens/StartDayScreen";
 import DecisionScreen from "./screens/DecisionScreen";
 import AgendaScreen from "./screens/AgendaScreen";
+import DecisionScreenEnglish from "./screens/DecisionScreenEnglish";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { useCallback } from "react";
@@ -40,6 +41,11 @@ function App() {
             name="DecisionScreen"
             component={DecisionScreen}
             options={{ title: "Game" }}
+          />
+          <Stack.Screen
+            name="DecisionScreenEnglish"
+            component={DecisionScreenEnglish}
+            options={{ title: "Game(EN)" }}
           />
           <Stack.Screen
             name="AgendaScreen"

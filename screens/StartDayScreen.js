@@ -13,7 +13,14 @@ function StartDayScreen({ navigation }) {
       <View style={styles.buttons}>
         <View style={styles.button}>
           <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
-            Game
+            Game (GER)
+          </PrimaryButton>
+        </View>
+        <View style={styles.button}>
+          <PrimaryButton
+            onPress={() => navigation.navigate("DecisionScreenEnglish")}
+          >
+            Game (ENG)
           </PrimaryButton>
         </View>
         <View style={styles.button}>
