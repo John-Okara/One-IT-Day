@@ -32,14 +32,14 @@ function DecisionScreenEnglish(props) {
     },
     1: {
       //styled
-      text: "An App on a Smartphone? Great, that was a real deep fall from the top \n\nAnyway, I'm here to help you, to get through the day. I'll give you all information you need.",
+      text: "An App on a Smartphone? Great, that was a realy deep fall from the top \n\nAnyway, I'm here to help you, to get through the day. I'll give you all information you need.",
       options: [
         {
           text: "Thanks...I guess",
           jump: 3,
         },
         {
-          text: "Who are you",
+          text: "Who are you?",
           jump: 4,
         },
       ],
@@ -49,7 +49,7 @@ function DecisionScreenEnglish(props) {
       text: "Hello...wait...I...Nevermind. \nI'm here to help you, to get through the day. I'll give you all information you need.",
       options: [
         {
-          text: "Thanks...I gutess",
+          text: "Thanks...I guess",
           jump: 3,
         },
         {
@@ -116,7 +116,7 @@ function DecisionScreenEnglish(props) {
     },
     7: {
       //styled
-      text: "Ok, long story short: My name is Kali, I was send here as a punishment. \nAnd when I don't finish my duty, to help you to go through the day, they will never let me go back home. \n\nSo can we continue",
+      text: "Ok, long story short: My name is Kali, I was send here for a punishment. \nAnd when I don't finish my duty, to help you to go through the day, they will never let me go back home. \n\nSo can we continue",
       options: [
         {
           text: "Ok",
@@ -350,7 +350,7 @@ function DecisionScreenEnglish(props) {
       text: "Ah, I understand. I'm glad that we have something cool to offer. \n\nWe'll see again after the workshop. \n\nHave fun!",
       options: [
         {
-          text: "Danke",
+          text: "Thanks",
           jump: 26,
         },
       ],
@@ -364,7 +364,7 @@ function DecisionScreenEnglish(props) {
           jump: 26,
         },
         {
-          text: "At what will you do at this time?",
+          text: "And what will you do at this time?",
           jump: 27,
         },
       ],
@@ -415,7 +415,7 @@ function DecisionScreenEnglish(props) {
           jump: 30,
         },
         {
-          text: "What have xou done?",
+          text: "What have you done?",
           jump: 31,
         },
       ],
@@ -591,7 +591,7 @@ function DecisionScreenEnglish(props) {
           jump: 43,
         },
         {
-          text: "Waht do you have to?",
+          text: "What do you have to?",
           jump: 49,
         },
       ],
@@ -834,7 +834,7 @@ function DecisionScreenEnglish(props) {
     },
     61: {
       //styled
-      text: "Da wären wir. \nAm Ende des Tages. Ist das nicht toll?! Ich darf endlich nach Hause!! \n\n<b>YUHUUU!!</b>",
+      text: "There we are. \nThe end of the day. Isn't it great?! Finaly I can go home!! \n\n<b>YUHUUU!!</b>",
       options: [
         {
           text: "...",
