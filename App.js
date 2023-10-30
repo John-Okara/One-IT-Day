@@ -2,7 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image } from "react-native";
 import { useFonts } from "@expo-google-fonts/inter";
 import StartDayScreen from "./screens/StartDayScreen";
-import DecisionScreen from "./screens/DecisionScreen";
+import DecisionScreenFixed from "./screens/DecisionScreenFixed";
 import AgendaScreen from "./screens/AgendaScreen";
 import DecisionScreenEnglish from "./screens/DecisionScreenEnglish";
 import { NavigationContainer } from "@react-navigation/native";
@@ -38,8 +38,8 @@ function App() {
             options={{ title: "Home" }}
           />
           <Stack.Screen
-            name="DecisionScreen"
-            component={DecisionScreen}
+            name="DecisionScreenFixed"
+            component={DecisionScreenFixed}
             options={{ title: "Game" }}
           />
           <Stack.Screen

@@ -1,4 +1,11 @@
-import { View, Image, Alert, ImageBackground, StyleSheet } from "react-native";
+import {
+  View,
+  Image,
+  Alert,
+  ImageBackground,
+  StyleSheet,
+  Text,
+} from "react-native";
 import PrimaryButton from "../components/PrimaryButton";
 
 function StartDayScreen({ navigation }) {
@@ -12,7 +19,9 @@ function StartDayScreen({ navigation }) {
       </View>
       <View style={styles.buttons}>
         <View style={styles.button}>
-          <PrimaryButton onPress={() => navigation.navigate("DecisionScreen")}>
+          <PrimaryButton
+            onPress={() => navigation.navigate("DecisionScreenFixed")}
+          >
             Game (GER)
           </PrimaryButton>
         </View>
@@ -48,7 +57,7 @@ const styles = StyleSheet.create({
     height: 80,
   },
   kaliposition: {
-    marginBottom: 30,
+    marginBottom: 70,
     marginLeft: 30,
   },
   button: {
@@ -57,6 +66,11 @@ const styles = StyleSheet.create({
   buttons: {
     top: 350,
     position: "absolute",
+    alignSelf: "center",
+  },
+  text: {
+    color: "white",
+    fontSize: 30,
     alignSelf: "center",
   },
 });

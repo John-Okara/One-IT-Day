@@ -18,7 +18,7 @@ function DecisionScreen(props) {
   const adventure = {
     0: {
       //styled
-      text: "Was zum...was ist das, wo bin ich hier? Äh...Hallo?",
+      text: "Was zum...was ist das, wo bin ich hier? Äh...Hallo? (ᗒᗩᗕ)",
       options: [
         {
           text: "Du bist eine App auf meinem Smartphone?",

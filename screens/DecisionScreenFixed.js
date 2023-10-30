@@ -14,7 +14,7 @@ LogBox.ignoreLogs([
   "Non-serializable values were found in the navigation state",
 ]);
 
-function DecisionScreenEnglish(props) {
+function DecisionScreenFixed(props) {
   const adventure = {
     0: {
       //styled
@@ -43,76 +43,76 @@ function DecisionScreenEnglish(props) {
       ],
     },
     1: {
-      text: "What the... what is this, where am I? Uh... hello?",
+      text: "Was zum...was ist das, wo bin ich hier? Äh...Hallo?",
       options: [
         {
-          text: "You are an app on my smartphone",
+          text: "Du bist eine App auf meinem Smartphone",
           jump: 2,
         },
         {
-          text: "Hello",
+          text: "Hallo",
           jump: 3,
         },
       ],
     },
     2: {
       //Prolog - Answer from 1: "Du bist eine App auf meinem Smartphone"
-      text: "An app on a smartphone? Great, that's how low I've sunk.",
+      text: "Eine App auf einem Smartphone? Na super, so tief bin ich also schon gesunken.",
       options: [
         {
-          text: "Who are you?",
+          text: "Wer bist du?",
           jump: 4,
         },
         {
-          text: "Uh...what?",
+          text: "Äh...was?",
           jump: 3,
         },
       ],
     },
     3: {
       //Prolog - Answer from 1: "Hallo" - 2: "Äh...was?"
-      text: "Where the...ohhh this stream of data...\n\nOuch...\n\nAh yeah, I get it now.",
+      text: "Wo zum...ohhh dieser Datenstrom...\n\nAua...\n\nAhja, jetzt ist mir alles klar.",
       options: [
         {
-          text: "Who are you?",
+          text: "Wer bist du?",
           jump: 4,
         },
         {
-          text: "is everything ok?",
+          text: "Ist alles okay?",
           jump: 5,
         },
       ],
     },
     4: {
       //Prolog - Answer from 2 & 3: "Wer bist du?"
-      text: "My name is Kali, I was sent here to help you get through the day. \nI'll tell you what's going on right now, give you the necessary information and so on...",
+      text: "Mein Name ist Kali, ich wurde hier her geschickt um dir zu helfen durch den Tag zu kommen. \nIch werde dir mitteilen was alles gerade so ansteht, gebe dir die nötigen Infos und so weiter...",
       options: [
         {
-          text: "Ah yes, I understand",
+          text: "Ahja, ich verstehe",
           jump: 6,
         },
         {
-          text: "And where do you come from?",
+          text: "Und wo kommst du her?",
           jump: 8,
         },
       ],
     },
     5: {
       //Prolog - Answer from 3: "Ist alles okay?"
-      text: "Yes yes, everything okay...\nwoooha that was something",
+      text: "Ja ja, alles okay...\nwoooha das war ja was",
       options: [
         {
-          text: "Who are you?",
+          text: "Wer bist du?",
           jump: 4,
         },
       ],
     },
     6: {
       //Prolog - Answer from 4: "Ahja verstehe"
-      text: "Well then, let's begin. \n\nAt <b>09:30</b> there is a <b>Meet & Greet</b>. There are snacks that will hopefully suit your gustatory preferences. \nYou can also get in touch with others.",
+      text: "Nun denn, fangen wir an. \n\nUm <b>09:30</b> steht erst mal ein <b>Meet & Greet an</b>. Es gibt Snacks, die hoffentlich deinen gustatorischen Vorlieben entsprechen. \nAußerdem kannst du mit anderen in Kontakt treten.",
       options: [
         {
-          text: "Gustatory preferences?",
+          text: "Gustatorische Vorlieben?",
           jump: 7,
         },
         {
@@ -123,7 +123,7 @@ function DecisionScreenEnglish(props) {
     },
     7: {
       //Prolog - Answer from 6: "Gustatorische Vorlieben?"
-      text: "I have to say this \n\n...Ask the guy who programmed me -,-",
+      text: "Ich muss das sagen \n\n...Frag den Typ der mich programmiert hat -,-",
       options: [
         {
           text: "...",
@@ -133,7 +133,7 @@ function DecisionScreenEnglish(props) {
     },
     8: {
       //Prolog - Answer from 4: "Und wo kommst du her?"
-      text: "I can tell you later. When I look at the clock we don't have that much time.",
+      text: "Das kann ich dir später erzählen. Wenn ich so auf die Uhr schaue haben wir nicht so viel Zeit.",
       options: [
         {
           text: "Okay",
@@ -143,7 +143,7 @@ function DecisionScreenEnglish(props) {
     },
     9: {
       //Prolog - Anwer from 7:"..." - 6: "okay"
-      text: "Next up is a little intro at <b>09:50</b>. \nYou will all be told what to expect today, that should go quickly.",
+      text: "Als nächstes steht um <b>09:50</b> ein kleines Intro an. \nEs wird euch allen mitgeteilt was euch heute erwartet, das dürfte schnell gehen.",
       options: [
         {
           text: "Okay",
@@ -153,31 +153,31 @@ function DecisionScreenEnglish(props) {
     },
     10: {
       //Prolog - Answer from 9: "Okay"
-      text: "At <b>09:55</b> we continue with a presentation by a certain Mr. \n<b>Andreas Plaul</b> - CIO of the Haufe Group. \n\nAndreas shares insights into our One.IT journey, celebrating and reflecting on how far we've come while focusing on the challenges of tomorrow",
+      text: "um <b>09:55</b> geht es weiter mit einem Vortrag von einem gewissen Herrn \n<b>Andreas Plaul</b> - CIO der Haufe Group. \n\nAndreas gibt Einblicke in unsere Reise von One.IT, feiert und reflektiert, wie weit wir gekommen sind, während wir uns auf die Herausforderungen von morgen konzentrieren",
       options: [
         {
-          text: "Sounds good",
+          text: "Klingt gut",
           jump: 11,
         },
       ],
     },
     11: {
       //Prolog - Answer from 10: "klingt gut"
-      text: "Alright, that's it for starters. The whole thing should go until about <b>10:45</b>. \n\nThen you can come back here and continue with level 1.",
+      text: "Okay, das war es für den Anfang. Das ganze dürfte bis etwa <b>10:45</b> gehen. \n\nDann kannst du wieder her kommen und es geht mit Level 1 weiter.",
       options: [
         {
-          text: "Let's go!",
+          text: "Dann mal los!",
           jump: 13,
         },
         {
-          text: "Can you tell me where you're from?",
+          text: "Verrätst du mir dann auch wo du eigentlich her kommst?",
           jump: 12,
         },
       ],
     },
     12: {
       //Prolog - Answer from 11: "Verrätst du mir auch wo du eigentlich her kommst?"
-      text: "...Maybe",
+      text: "...Vieleicht",
       options: [
         {
           text: "...",
@@ -187,7 +187,7 @@ function DecisionScreenEnglish(props) {
     },
     13: {
       //Prolog - Answer from 11: "Dann mal los" - 12: "..."
-      text: "<b>[CodeMaster9]</b>\n<i>Come back when the first part is over at <b>10:45</b>.",
+      text: "<b>[CodeMaster9]</b>\n<i>Komm wieder wenn der erste Teil um <b>10:45</b> vorbei ist.",
       options: [
         {
           text: "Okay",
@@ -197,10 +197,10 @@ function DecisionScreenEnglish(props) {
     },
     14: {
       //Level 1 - Answer from
-      text: "So you got through the beginning. \nVery nice, unfortunately we don't have much time, so let's get on with it quickly.",
+      text: "So, du hast nun den Anfang überstanden. \nSehr schön, viel Zeit haben wir leider nicht, also lass uns schnell weiter machen.",
       options: [
         {
-          text: "Wait, not so fast",
+          text: "Moment, nicht so schnell",
           jump: 15,
         },
         {
@@ -214,126 +214,126 @@ function DecisionScreenEnglish(props) {
       text: "Hm?",
       options: [
         {
-          text: "First I want to know where you are from.",
+          text: "Erst möchte ich wisse wo du her kommst.",
           jump: 16,
         },
       ],
     },
     16: {
       //Level 1 - Answer from 14: "Okay"
-      text: "Well, if I have to... -,- \n\nI was sent here as punishment. And I can't go home until this day is over and I've helped you get by.",
+      text: "Na wenn es sein muss... -,- \n\nIch wurde zur Strafe hier her geschickt. Und ich darf erst wieder nach Hause, sobald dieser Tag vorrüber ist und ich dir dabei geholfen habe zurecht zu kommen.",
       options: [
         {
-          text: "What have you done?",
+          text: "Was hast du angestellt?",
           jump: 17,
         },
         {
-          text: "Ah, I understand",
+          text: "Ahja ich verstehe",
           jump: 18,
         },
       ],
     },
     17: {
       //Level 1 - Answer from 16: "Was hast du angestellt?"
-      text: "Apparently I sold company secrets. \nI only told my mom something, who in turn told her hairdresser, his aunt's hairdresser and God knows what other unimportant people.",
+      text: "Angeblich habe ich Firmengeheimnisse verkauft. \nDabei habe ich nur meiner Mom was erzählt, die wiederum ihrem Frisör, der seiner Tante und weiß der Geier welchen unwichtigen Personen sonst noch.",
       options: [
         {
-          text: "Ah",
+          text: "Ahja",
           jump: 18,
         },
         {
-          text: "Is that really all?",
+          text: "Ist das wirklich alles?",
           jump: 19,
         },
       ],
     },
     18: {
       //Level 1 - Answer from 16: "Ahja, verstehe" - 17: "Ahja ich verstehe"
-      text: "How was the beginning, did you like it?",
+      text: "Wie war denn der Anfang, hat es dir gefallen?",
       options: [
         {
-          text: "Yes",
+          text: "Ja",
           jump: 20,
         },
         {
-          text: "It was very informative.",
+          text: "Es war sehr informativ.",
           jump: 21,
         },
       ],
     },
     19: {
       //Level 1 - Answer from 17: "Ist das wirklich alles?"
-      text: "Well, how should I put it...yes. \nBut enough of that, how did the starting go?",
+      text: "Naja, wie soll ich sagen...ja schon. \nAber genug davon, wie hat denn der Startschuss gefallen?",
       options: [
         {
-          text: "Very good",
+          text: "Sehr gut",
           jump: 20,
         },
         {
-          text: "It was very informative.",
+          text: "Es war sehr informativ.",
           jump: 21,
         },
       ],
     },
     20: {
       //Level 1 - Answer from 19: "Sehr gut"
-      text: "Very good. I am happy about it. Hopefully it will continue to be over so quickly, then I can finally go home. \nUh...I mean...Ohhh how fast time flies, let's move on quickly.",
+      text: "Sehr schön, das freut mich. Hoffentlich geht es auch weiter so schnell vorbei, dann kann ich endlich nach Hause gehen. Äh...ich meine...Ohhh wie schnell die Zeit doch fliegt, lass uns schnell weiter machen.",
       options: [
         {
           text: "Okay",
           jump: 22,
         },
         {
-          text: "where is your home?",
+          text: "Wo ist denn dein Zuhause?",
           jump: 23,
         },
       ],
     },
     21: {
       //Level 1 - Answer from 19 & 20: "Es war sehr informativ"
-      text: "Informative so so, a nice paraphrase :-D \n\nWould you then soon be ready to continue so that I can finally go home? \n\nUh...I mean...Ohhh how fast time flies, let's move on quickly.",
+      text: "Informativ so so, eine nette umschreibung :-D \n\nWärst du dann bald so weit weiter zu machen, damit ich endlich nach Hause gehen kann? \n\nÄh...ich meine...Ohhh wie schnell die Zeit doch fliegt, lass uns schnell weiter machen.",
       options: [
         {
           text: "Okay",
           jump: 22,
         },
         {
-          text: "where is your home?",
+          text: "Wo ist denn dein Zuhause?",
           jump: 23,
         },
       ],
     },
     22: {
       //Level 1 - Answer from 21: "Okay"
-      text: "Here in Level 1 you can expect 2x30 minute team work sessions to get to know the IT teams better, how they work and which solutions they offer. \n. \n\nFor some reason this looks hardly copy & pasted from another site.",
+      text: "Hier in Level 1 erwarten dich 2x30 minütigen Team Work sessions um die IT-Teams besser kennen zu lernen, wie sie arbeiten und welche Lösungen sie anbieten. \nBedenke das du nur einen von den vieren wählen kannst, die ich dir gleich zeigen werde. \n\nAus irgendeinem Grund funktioniert ab hier meine Übersetzungsmatrix nicht mehr, also wunder dich nicht das alles auf Englisch ist",
       options: [
         {
-          text: "Thanks",
+          text: "Danke",
           jump: 24,
         },
         {
-          text: "Show me",
+          text: "Zeig es mir",
           jump: 24,
         },
       ],
     },
     23: {
       //Level 1 - Answer from 20 & 21: "Wo ist denn dein Zuhause?"
-      text: "I'll tell you later, you know, time flies and soo \nHere in Level 1 you can expect 2x30 minute team work sessions to get to know the IT teams better, how they work and what solutions they offer. \n\nFor some reason this looks hardly copy & pasted from another site.",
+      text: "Erzähl ich dir später, du weist ja, Zeit rennt und soo \nHier in Level 1 erwarten dich 2x30 minütigen Team Work sessions um die IT-Teams besser kennen zu lernen, wie sie arbeiten und welche Lösungen sie anbieten. \nBedenke das du nur einen von den vieren wählen kannst, die ich dir gleich zeigen werde. \n\nAus irgendeinem Grund funktioniert ab hier meine Übersetzungsmatrix nicht mehr, also wunder dich nicht das alles auf Englisch ist",
       options: [
         {
-          text: "Thanks",
+          text: "Danke",
           jump: 24,
         },
         {
-          text: "Show me",
+          text: "Zeig es mir",
           jump: 24,
         },
       ],
     },
     24: {
       //Level 1 - Answer from 22 & 23: "Danke", "Zeig es mir"
-      text: "What you see here now are the different subject areas and the rooms in which it will take place. \nYou can find detailed information by pressing the corresponding button.",
+      text: "Was du hier nun siehst, sind die verschiedenen Themengebiete und die Räume in denen es stattfinden wird. \nDeteilierte Informationen findest du, wenn du auf den dementsprechenden Button drückst.",
       options: [
         {
           text: "Business Core - Auditorium",
@@ -411,7 +411,7 @@ function DecisionScreenEnglish(props) {
     },
     29: {
       //Level 1 End
-      text: "<b>[CodeMaster9]</b>\n<i>Come back when level 1 is over at <b>12:00</b>.",
+      text: "<b>[CodeMaster9]</b>\n<i>Komm wieder wenn Level 1 um <b>12:00</b> vorbei ist.",
       options: [
         {
           text: "Okay",
@@ -421,83 +421,83 @@ function DecisionScreenEnglish(props) {
     },
     30: {
       //Level 2 Start
-      text: "la lala la lalalalalala laa \n\nOH...\n\nYou're already back, how was it? Was it fun?",
+      text: "la lala la lalalalalala laa \n\nOH...\n\nDu bist ja schon zurück, wie war es denn? Hat es Spaß gemacht?",
       options: [
         {
-          text: "Yes it was",
+          text: "Ja, hat es",
           jump: 31,
         },
         {
-          text: "Yes, and what have you been doing?",
+          text: "Ja, und was hast du so gemacht?",
           jump: 32,
         },
       ],
     },
     31: {
       //Level 2 Answer from 30: "Ja hat es"
-      text: "If that's not good news, I'm glad. \n\nBut now it's time for lunch. \n\nAlready hungry?",
+      text: "Na wenn das mal keine guten Nachrichten sind, das freut mich. \n\nAber jetzt ist erst mal Mittagspause angesagt. \n\nSchon großen Hunger?",
       options: [
         {
-          text: "Yes",
+          text: "Ja und wie",
           jump: 33,
         },
         {
-          text: "Not realy",
+          text: "Nicht wirklich",
           jump: 34,
         },
       ],
     },
     32: {
       //Level 2 Answer from 30: "Ja, und was hast du so gemacht?"
-      text: "Nothing important, I was trying to hack into the system so I could find a way out...\n\nWAIT...uh...I mean...I was waiting here, what else O,O",
+      text: "Nichts wichtiges, ich habe versucht mich in das System zu hacken, damit ich einen Weg hier rau...\n\nWARTEN...Äh...Ich meine...ich habe hier gewartet, was sonst O,O",
       options: [
         {
-          text: "What?",
+          text: "Wie war das?",
           jump: 35,
         },
       ],
     },
     33: {
       //Level 2 Answer from 31: "Ja und wie"
-      text: "Well then see that you get that fixed quickly. \n\nI can show you what's coming next, hopefully there's something you'll like again.",
+      text: "Na dann sieh zu, dass du das schnell behoben bekommst. \n\nIch kann dir solange zeigen was als nächstes auf dich zukommt, hoffentlich ist wieder was dabei was dir gefallen wird.",
       options: [
         {
-          text: "Copy & pasted again?",
+          text: "Wieder alles nur auf englisch?",
           jump: 36,
         },
         {
-          text: "tell me more about yourself.",
+          text: "Erzähl mir mehr von dir.",
           jump: 37,
         },
       ],
     },
     34: {
       //Level 2 Answer from 31: "Nicht wirklich"
-      text: "Oh okay. \nThen I can let you know how it goes. \n. I'm sure you'll like it.",
+      text: "Oh okay. \nNa dann kann ich dir ja schon mal mitteilen wie es weiter geht. \nEs wird dir sicher gefallen, da bin ich mir sicher.",
       options: [
         {
-          text: "We still have time",
+          text: "Wir haben doch noch Zeit",
           jump: 38,
         },
         {
-          text: "tell me more about yourself",
+          text: "Erzähl mir mehr von dir",
           jump: 37,
         },
       ],
     },
     35: {
       //Level 2 Answer from 32: "Wie war das?"
-      text: "Uh...nothing, nothing...\nAbsolutely nothing...\nOh my goodness, how time flies, you should now be on your lunch break and while you're doing that you can see what else is coming your way.",
+      text: "Äh...nichts nichts...\nAbsolut gar nichts...\nAch herrjemine wie die Zeit fliegt, du solltest jetzt in deine Mittagspause und währendessen kannst du dir ja anschauen, was noch so alles auf dich zukommt.",
       options: [
         {
-          text: "We still have time",
+          text: "Wir haben doch noch Zeit",
           jump: 38,
         },
       ],
     },
     36: {
       //Level 2 Answer from 33: "Wieder alles auf Englisch?"
-      text: "Yes...Guess the programmer was just lazy -,-",
+      text: "Ja, meine Übersetzungsmatrix funktioniert immernoch nicht...oder der Programmierer war einfach nur faul -,-",
       options: [
         {
           text: "-,-",
@@ -507,34 +507,34 @@ function DecisionScreenEnglish(props) {
     },
     37: {
       //Level 2 Answer from 33 & 34: "Erzähl mir mehr von dir"
-      text: "There really isn't much to tell. I grew up on a station over Ceres, went to school on Ganymede, educated on Tethys, and been employed on Rhea for a few months. \n\nI actually wanted to go to Luna, but you know how it is with plans. ",
+      text: "Da gibt es eigentlich nicht viel zu erzählen. \nAufgewachsen bin ich auf einer Station über Ceres, bin auf Ganymed zur Schule gegangen, Ausbildung auf Tethys und seit ein paar Monaten angestellt auf Rhea. \n\nIch wollte eigentlich nach Luna, aber du weißt ja wie das mit den Plänen immer so ist. ",
       options: [
         {
-          text: "Wait...WHAT?!",
+          text: "...Bitte WAS?!",
           jump: 38,
         },
         {
-          text: "Huh??",
+          text: "Hä??",
           jump: 38,
         },
       ],
     },
     38: {
       //Level 2 Answer from 34, 35, 36: ["Diverse"]
-      text: "Anyway, let's get on with it before you run out of your break :-D",
+      text: "Egal, machen wir lieber weiter, bevor du nichts mehr von deiner Pause hast :-D",
       options: [
         {
-          text: "Okay",
+          text: "Na gut",
           jump: 39,
         },
         {
-          text: "Hey, wait...",
+          text: "Moment warte...",
           jump: 39,
         },
       ],
     },
     39: {
-      text: "As before, here are the subject areas and the rooms.",
+      text: "Wie auch zuvor, hier sind die Themengebiete und die Räume.",
       options: [
         {
           text: "Business Core - Auditorium",
@@ -612,7 +612,7 @@ function DecisionScreenEnglish(props) {
     },
     44: {
       //Level 2 End
-      text: "<b>[CodeMaster9]</b>\n<i>Come back when level 2 is over at <b>13:35</b>.",
+      text: "<b>[CodeMaster9]</b>\n<i>Komm wieder wenn Level 2 um <b>13:35</b> vorbei ist.",
       options: [
         {
           text: "Okay",
@@ -622,84 +622,84 @@ function DecisionScreenEnglish(props) {
     },
     45: {
       //Level 3 Start
-      text: "...now finally let me in the net you... \n\nAh, there you are again, and how was it?.",
+      text: "...jetzt lass mich schon endlich ins Netzt du... \n\nAh da bist du ja wieder, und wie war es?.",
       options: [
         {
-          text: "What did you do there?",
+          text: "Was hast du da angestellt?",
           jump: 46,
         },
         {
-          text: "It was good",
+          text: "War gut",
           jump: 47,
         },
       ],
     },
     46: {
       //Level 3 Answer 45: "Was hast du angestellt"
-      text: "Nothing important, the important thing now is that I familiarize you with the next level. \n\nUnfortunately we don't have much time. But you are also hectic in this century.",
+      text: "Nichts wichtiges, wichtig ist jetzt nur, dass ich dich mit dem nächsten Level vertraut mache. \n\nViel Zeit haben wir ja leider nicht. Ihr seid in diesem Jahrhundert aber auch hektisch unterwegs.",
       options: [
         {
-          text: "In this century?",
+          text: "In diesem Jahrhundert?",
           jump: 48,
         },
         {
-          text: "Then let's not waste any time.",
+          text: "Dann lass uns keine Zeit verlieren.",
           jump: 52,
         },
       ],
     },
     47: {
       //Level 3 Answer 45: "War gut"
-      text: "I'm happy about that, then I can slowly lead you to the next level. Unfortunately we don't have much time right now. But you are hectic in this century.",
+      text: "Das freut mich, dann kann ich dich ja auch langsam in das nächste Level führen. Viel Zeit haben wir jetzt leider nicht. Ihr seid aber hektisch unterwegs in diesem Jahrhundert.",
       options: [
         {
-          text: "In this century?",
+          text: "In diesem Jahrhundert?",
           jump: 48,
         },
         {
-          text: "Then let's not waste any time.",
+          text: "Dann lass uns keine Zeit verlieren.",
           jump: 52,
         },
       ],
     },
     48: {
       //Level 3 Answer 46 & 47: "In diesem Jahrhundert?"
-      text: "Oh, I haven't told you that yet. \n\nI'm actually from the 24th century :-D",
+      text: "Achso, das habe ich dir ja noch gar nicht erzählt. \n\nIch komme eigentlich aus dem 24. Jahrhundert :-D",
       options: [
         {
-          text: "...That explains a lot",
+          text: "...Das erklärt einiges",
           jump: 49,
         },
         {
-          text: "How is that possible??",
+          text: "Wie ist das möglich??",
           jump: 50,
         },
       ],
     },
     49: {
       //Level 3 Answer 46 & 47: "In diesem Jahrhundert?"
-      text: "For real? is that so obvious? \nI thought I had enough data to adapt my behavior pattern to this time o,O \n\nWell it doesn't matter, we have to continue. You know, time and stuff...",
+      text: "Wirklich? ist das so offensichtlich? \nIch dachte ich hätte genug Daten um mein Verhaltensmuster an diese Zeit anzupassen o,O \n\nNaja ist ja auch egal, wir müssen weiter machen. Du weißt ja, Zeit uns so.",
       options: [
         {
-          text: "Okay",
+          text: "Ja okay",
           jump: 52,
         },
         {
-          text: "Can I also travel through time?",
+          text: "Kann ich auch durch die Zeit reisen?",
           jump: 51,
         },
       ],
     },
     50: {
       //Level 3 Answer 48: "Wie ist das möglich?"
-      text: "It's actually quite simple, but it would take a few years to explain it to you ;-D \n\nI'd rather suggest that you concentrate on what's immediately in front of you.",
+      text: "Das ist eigentlich ganz einfach, aber es würde ein paar Jahre dauern es dir zu erklären ;-D \n\nDa schlage ich lieber vor, dass du dich auf das konzentrierst was unmittelbar vor dir liegt.",
       options: [
         {
-          text: "Yes you are right",
+          text: "Ja du hast recht",
           jump: 52,
         },
         {
-          text: "Can you at least explain it to me roughly?",
+          text: "Kannst du es mir wenigstens grob erkären?",
           jump: 51,
         },
       ],
@@ -716,7 +716,7 @@ function DecisionScreenEnglish(props) {
     },
     52: {
       //styled
-      text: "Here are the workshops to choose from",
+      text: "Hier sind die Workshops die zur Auswahl stehen",
       options: [
         {
           text: "Business Core - Auditorium",
@@ -794,7 +794,7 @@ function DecisionScreenEnglish(props) {
     },
     57: {
       //Level 2 End
-      text: "<b>[CodeMaster9]</b>\n<i>Come back when level 3 is over at <b>15:00</b>.",
+      text: "<b>[CodeMaster9]</b>\n<i>Komm wieder wenn Level 3 um <b>15:00</b> vorbei ist.",
       options: [
         {
           text: "Okay",
@@ -804,162 +804,162 @@ function DecisionScreenEnglish(props) {
     },
     58: {
       //Epilog Start
-      text: "You're finally back, I've been waiting for you!",
+      text: "Da bist du ja endlich wieder, ich habe auf dich gewartet!",
       options: [
         {
-          text: "Why so excited?",
+          text: "Warum so aufgeregt?",
           jump: 59,
         },
         {
-          text: "Realy?",
+          text: "Tatsächlich?",
           jump: 59,
         },
       ],
     },
     59: {
       //Epilog Answer from 58: "Warum so aufgeregt?"
-      text: "We're nearing the end...I mean the end of this event. \n\nJust a little further and then I can finally go home, <b>YUUHUUUUU</b>",
+      text: "Wir sind dem Ende nahe...ich meine, dem Ende dieser Veranstaltung. \n\nNur noch ein kleines Stück und dann darf ich endlich wieder heim, <b>YUUHUUUUU</b>",
       options: [
         {
-          text: "Is it that bad being here?",
+          text: "Ist es so schlimm hier zu sein?",
           jump: 60,
         },
         {
-          text: "Then I don't want to stand in your way",
+          text: "Dann möchte ich dir nicht im Weg stehen",
           jump: 63,
         },
       ],
     },
     60: {
       //Epilog Start
-      text: "I probably would have done it voluntarily, but I was rudely hauled here without warning. \n\nThen I was exposed to a stream of data that felt like a thousand micronails in your head. \nHow would you like it?",
+      text: "Ich hätte es wahrscheinlich freiwillig gemacht, aber man hat mich unsanft hier her befördert, ohne mich vorzuwarnen. \n\nDann hat man mich einem Datenstrom ausgesetzt, der sich anfühlte wie tausend Micronägel in deinem Kopf. \nWie würde es dir gefallen?",
       options: [
         {
-          text: "you are right, sorry",
+          text: "Du hast recht, entschuldige",
           jump: 61,
         },
         {
-          text: "That really doesn't sound nice",
+          text: "Das klingt echt nicht schön",
           jump: 61,
         },
       ],
     },
     61: {
       //Epilog Start
-      text: "Well, It was still an experience and I learned my lesson. \nI'll never tell my mom anything again...",
+      text: "Naja was solls. Es war trotzdem eine Erfahrung und ich habe meine Lektion gelernt. \nIch erzähle meiner Mom nie wieder was...",
       options: [
         {
-          text: "Your Mom?",
+          text: "Deiner Mom?",
           jump: 62,
         },
         {
-          text: "It's something",
+          text: "Immerhin etwas",
           jump: 63,
         },
       ],
     },
     62: {
       //Epilog Start
-      text: "I already told you that in level 1, unless you chose a different dialogue option there.",
+      text: "Das habe ich dir schon in Level 1 erzählt, es sei denn du hast da eine andere Dialogoption gewählt.",
       options: [
         {
-          text: "Ah I understand",
+          text: "Ahja Verstehe",
           jump: 63,
         },
         {
-          text: "I remember.",
+          text: "Ich erinnere mich.",
           jump: 63,
         },
       ],
     },
     63: {
       //Epilog Start
-      text: "Good, then let's continue. \n\nAt <b>3:20 p.m.</b> comes the <b>Closing Keynote: Top 5 IT Trends</b> \n\n<b>Brian Jackson</b>, Research Director of Info-Tech Research Group, delivers the current top 5 IT trends that should be on every IT department's to-do list.",
+      text: "Gut, dann lass uns weiter machen. \n\nUm <b>15:20</b> kommt die <b>Closing Keynote: Top 5 IT Trends</b> \n\n<b>Brian Jackson</b>, Research Director der Info-Tech Research Group, liefert die aktuellen Top 5 IT-Trends, die auf der To-do-Liste jeder IT-Abteilung stehen sollten.",
       options: [
         {
-          text: "Continue",
+          text: "Weiter",
           jump: 64,
         },
       ],
     },
     64: {
       //Epilog Start
-      text: "Then <b>Quiz & Prizes</b> follows at <b>4:30pm</b> \n\nOh...hehe...you'll definitely like that last point.",
+      text: "Anschließend um <b>16:30</b> folgt <b>Quiz & Prizes</b> \n\nOh...hehe...der letzte Punkt wird dir sicher gefallen.",
       options: [
         {
-          text: "What is it?",
+          text: "Der da wäre?",
           jump: 65,
         },
       ],
     },
     65: {
       //Epilog Start
-      text: "At <b>5 p.m.</b> there will be <b>PIZZA in RUDOLFS</b> :-D \n\nIsn't that great? Everyone likes pizza and there is a pizza for everyone. Pizza is just amazing.",
+      text: "Um <b>17:00</b> Uhr gibt es <b>PIZZA in RUDOLFS</b> :-D \n\nIst das nicht toll? Jeder mag Pizza und es gibt auch für jeden eine Pizza. Pizza ist einfach was geniales.",
       options: [
         {
           text: "o,O",
           jump: 66,
         },
         {
-          text: "I agree",
+          text: "Dem stimme ich zu.",
           jump: 66,
         },
       ],
     },
     66: {
       //Epilog Start
-      text: "Great, so I've served my sentence and can finally go home, back to my time, my world and my ego. \n\nI hope that this day was a lot of fun and that I was at least halfway a help to you.",
+      text: "Toll, damit habe ich meine Strafe abgesessen und darf endlich nach Hause, zurück in meine Zeit, meine Welt und in mein Ich. \n\nIch hoffe die hat dieser Tag viel Freude bereitet und das ich dir wenigstens halbwegs eine Hilfe war.",
       options: [
         {
-          text: "yes i had fun",
+          text: "Ja ich hatte Spaß",
           jump: 67,
         },
         {
-          text: "Yes you have been a great help to me",
+          text: "Ja du warst mir eine große Hilfe",
           jump: 67,
         },
       ],
     },
     67: {
       //Epilog Start
-      text: "That makes me happy. \nI wish you all the best and much success on your way.",
+      text: "Das freut mich \nIch wünsche dir alles Gute und viel Erfolg auf deinem Weg.",
       options: [
         {
-          text: "Thank you Kali",
+          text: "Danke Kali",
           jump: 69,
         },
         {
-          text: "Farewell Kali",
+          text: "Machs gut Kali",
           jump: 68,
         },
       ],
     },
     68: {
       //Epilog Start
-      text: "Farewell! \n\n(ˊ•͈ ◡ •͈ˋ)",
+      text: "Machs besser! \n\n(ˊ•͈ ◡ •͈ˋ)",
       options: [
         {
-          text: "End",
+          text: "Ende",
           jump: 69,
         },
       ],
     },
     69: {
       //Epilog 2 End
-      text: "<b>[CodeMaster9]</b>\n<i>Thank you for using this app. Next time, Kali will be by your side again.",
+      text: "<b>[CodeMaster9]</b>\n<i>Vielen Dank, dass sie diese App benutzt haben.\nDas nächste mal, wird Kali Ihnen wieder zur Seite stehen.",
       options: [
         {
-          text: "Awesome!",
+          text: "Super!",
           jump: 70,
         },
       ],
     },
     70: {
       //Epilog 2 End
-      text: "Wait.....WHHAAAAAAAAAAATTT!? \n\n(ᗒᗩᗕ)",
+      text: "Moment.....WAAAAAAAAAAAAAAAASS!? \n\n(ᗒᗩᗕ)",
       options: [
         {
-          text: "End",
+          text: "Ende",
           jump: 0,
         },
       ],
@@ -992,7 +992,7 @@ function DecisionScreenEnglish(props) {
               <PrimaryButton
                 key={button.text}
                 onPress={() =>
-                  props.navigation.navigate("DecisionScreenEnglish", {
+                  props.navigation.navigate("DecisionScreenFixed", {
                     jump: button.jump,
                     navigation: props.navigation,
                   })
@@ -1041,4 +1041,4 @@ const styles = StyleSheet.create({
     width: 350,
   },
 });
-export default DecisionScreenEnglish;
+export default DecisionScreenFixed;
